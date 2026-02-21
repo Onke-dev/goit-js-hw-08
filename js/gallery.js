@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
     refs.gallery.addEventListener("click", (e) => {
         if (e.target.nodeName === "IMG") {
             e.preventDefault();
-            //   console.log(e.target.dataset.source);
         }
         showModal(e.target.dataset.source);
     });
@@ -119,14 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function showModal(hrefUrl) {
-    const instance = basicLightbox.create(`
-     <img
-      class="gallery-image"
-      src="${image.preview}"
-      data-source="${image.original}"
-      alt="${image.description}"
-    />
-`)
+    const instance = basicLightbox.create(`<img data-source="${hrefUrl}"/>`)
 
     instance.show()
 }
