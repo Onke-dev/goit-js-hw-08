@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target.nodeName === "IMG") {
             e.preventDefault();
         }
-        showModal(e.target.dataset.source);
+        showModal(e.target.src);
     });
 
     const firstLink = refs.gallery.querySelectorAll(".gallery-link");
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function showModal(hrefUrl) {
-    const instance = basicLightbox.create(`<img data-source="${hrefUrl}"/>`)
+    const instance = basicLightbox.create(`<img src="${hrefUrl}"/>`)
 
     instance.show()
 }
