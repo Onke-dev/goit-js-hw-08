@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function showModal(hrefUrl) {
-    const instance = basicLightbox.create(`<img src="${hrefUrl}"/>`)
+    const instance = basicLightbox.create(`<img src="${hrefUrl}" width = "1112px" height = "640px"/>`)
 
     instance.show()
 }
