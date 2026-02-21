@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target.nodeName === "IMG") {
             e.preventDefault();
         }
-        showModal(e.target.src);
+        showModal(e.target.dataset.source);
     });
 
     const firstLink = refs.gallery.querySelectorAll(".gallery-link");
