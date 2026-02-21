@@ -96,25 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
             showModal(e.target.dataset.source);
         }
     });
-
-    const firstLink = refs.gallery.querySelectorAll(".gallery-link");
-    const firstImage = refs.gallery.querySelectorAll(".gallery-image");
-    const firstitem = refs.gallery.querySelectorAll(".gallery-item");
-
-    firstitem.forEach((item) => {
-        item.style.width = "360px";
-        item.style.height = "200px";
-    });
-
-    firstLink.forEach((link) => {
-        link.style.width = "360px";
-        link.style.height = "200px";
-    });
-
-    firstImage.forEach((image) => {
-        image.style.width = "360px";
-        image.style.height = "200px";
-    });
 });
 
 function showModal(hrefUrl) {
@@ -123,17 +104,7 @@ function showModal(hrefUrl) {
     instance.show();
 }
 
-refs.body.style.margin = "0";
-refs.gallery.style.display = "flex";
-refs.gallery.style.flexDirection = "row";
-refs.gallery.style.flexWrap = "wrap";
-refs.gallery.style.justifyContent = "center";
-refs.gallery.style.columnGap = "24px";
-refs.gallery.style.rowGap = "24px";
-refs.gallery.style.listStyleType = "none";
-refs.gallery.style.padding = "0";
-refs.gallery.style.margin = "24px auto";
-refs.gallery.style.maxWidth = "1128px";
+
 
 
 
