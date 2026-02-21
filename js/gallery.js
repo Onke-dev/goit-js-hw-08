@@ -118,9 +118,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function showModal(hrefUrl) {
-    const instance = basicLightbox.create(`<img src="${hrefUrl}" width = "1112px" height = "640px"/>`)
+    const instance = basicLightbox.create(`<img width = "1112" height = "640" src="${hrefUrl}"/>`);
 
-    instance.show()
+    instance.show();
 }
 
 refs.body.style.margin = "0";
